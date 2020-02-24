@@ -21,6 +21,7 @@ describe('isHot', () => {
     it("given a name shorter than 6 characters, returns a longer greeting", () => {
       const name = 'Colin';
       expect(helloThere(name)).toBe('Hello, Colin')
+      expect(helloThere('Bogdan')).toBe('Hello, Bogdan')
     })
     
     it("given a name of at least 6 characters, returns a shorter greeting", () => {
